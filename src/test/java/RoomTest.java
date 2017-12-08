@@ -11,20 +11,19 @@ public class RoomTest {
 
     @Before
     public void before(){
-        room = new Room("Wedding Suit", 2);
+        room = new Room(2);
 
     }
 
     @Test
-    public void canGetName(){
-        assertEquals("Wedding Suit", room.getName());
+    public void canGetCapacity(){
+        assertEquals(2, room.getCapacity());
     }
 
     @Test
-    public void setName(){
-        room.setName("Baller Suit");
-        assertEquals("Baller Suit", room.getName());
-
+    public void setCapacity(){
+        room.setCapacity(4);
+        assertEquals(4, room.getCapacity());
     }
 
 }
