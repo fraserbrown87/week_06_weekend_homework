@@ -1,9 +1,9 @@
 public class Bedroom extends Room {
 
     private int roomNumber;
-    private String roomType;
+    private RoomType roomType;
 
-    public Bedroom(int capacity, int roomNumber, String roomType) {
+    public Bedroom(int capacity, int roomNumber, RoomType roomType) {
         super(capacity);
         this.roomNumber = roomNumber;
         this.roomType = roomType;
@@ -13,11 +13,12 @@ public class Bedroom extends Room {
         return roomNumber;
     }
 
-    public String getRoomType() {
+
+    public RoomType getRoomType() {
         return roomType;
     }
 
-    public void setRoomType(String roomType) {
+    public void setRoomType(RoomType roomType) {
         this.roomType = roomType;
     }
 }

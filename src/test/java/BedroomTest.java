@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import org.junit.*;
 
 
 public class BedroomTest {
@@ -10,7 +11,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(2,23, "Double");
+        bedroom = new Bedroom(2,23, RoomType.DOUBLE);
     }
 
     @Test
@@ -20,12 +21,12 @@ public class BedroomTest {
 
     @Test
     public void getRoomType(){
-        assertEquals("Double", bedroom.getRoomType());
+        assertEquals(RoomType.DOUBLE, bedroom.getRoomType());
     }
 
     @Test
     public void setRoomType(){
-        bedroom.setRoomType("Single");
-        assertEquals("Single", bedroom.getRoomType());
+        bedroom.setRoomType(RoomType.SINGLE);
+        assertEquals(RoomType.SINGLE, bedroom.getRoomType());
     }
 }
