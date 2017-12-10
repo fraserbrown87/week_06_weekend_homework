@@ -11,7 +11,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(2,23, RoomType.DOUBLE);
+        bedroom = new Bedroom(2,23, RoomType.DOUBLE, RoomValue.MEDIUM);
     }
 
     @Test
@@ -28,5 +28,10 @@ public class BedroomTest {
     public void setRoomType(){
         bedroom.setRoomType(RoomType.SINGLE);
         assertEquals(RoomType.SINGLE, bedroom.getRoomType());
+    }
+
+    @Test
+    public void doubleHasValue200(){
+        assertEquals(200, bedroom.getValueFromEnum());
     }
 }

@@ -5,3 +5,4 @@ public enum RoomType {
     PENTHOUSE,
     HIGHROLLER,
 }
+
