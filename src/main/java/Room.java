@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Room {
 
     private int capacity;
-    private ArrayList<Guest> guests;
+    private ArrayList<Patron> guests;
 
     public Room(int capacity){
         this.capacity = capacity;
