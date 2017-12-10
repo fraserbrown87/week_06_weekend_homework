@@ -17,4 +17,16 @@ public class Room {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
+
+    public int getPatronCount(){
+        return this.guests.size();
+    }
+
+    public void addPatron(Patron patron) {
+        this.guests.add(patron);
+    }
+
+    public void removePatron(Patron patron) {
+        this.guests.remove(patron);
+    }
 }

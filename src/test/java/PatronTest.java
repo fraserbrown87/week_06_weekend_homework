@@ -11,12 +11,14 @@ public class PatronTest {
         patrons = new Patron("Basil Fawlty", 300);
     }
 
-    @Test canGetName(){
-        assertEquals("Basil Fawlty", patrons.getName())
+    @Test
+    public void canGetPatronName(){
+        assertEquals("Basil Fawlty", patrons.getName());
     }
-    
 
-    @Test canGetWallet(){
-        assertEquals(300, patrons.getWallet())
+
+    @Test
+    public void canGetWallet(){
+        assertEquals(300, patrons.getWallet());
     }
 }

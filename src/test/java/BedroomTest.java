@@ -34,4 +34,5 @@ public class BedroomTest {
     public void doubleHasValue200(){
         assertEquals(200, bedroom.getValueFromEnum());
     }
+
 }

@@ -27,4 +27,5 @@ public class Bedroom extends Room {
     public int getValueFromEnum() {
         return this.roomValue.getValue();
     }
+
 }
